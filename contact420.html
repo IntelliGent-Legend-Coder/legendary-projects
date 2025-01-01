@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url("Indo3.png");
+            background-size: cover;
+        }
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+         }
+        form{
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: grayscale(8px);
+            background: rgba(0,0,0,0.5);
+            border-radius: 20px;
+            text-align: center;
+        }
+        label{
+            color: white;
+            text-transform: uppercase;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: x-large;
+            color: white;
+            background: transparent;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 500;
+        }
+        label:hover{
+            color: goldenrod;
+            text-decoration: underline;
+            transition: 0.5s ease-in-out;
+        }
+        input{
+            padding: 10px;
+            padding: 20px;
+            border-radius: 20px;
+            background: transparent;
+        }
+        input:hover{
+            background-color: aquamarine;
+            padding-right: 50px;
+            transition: 0.5s ease-in-out;
+        }
+        .admit{
+            text-align: center;
+            font-size:37px;
+            color: aqua;
+            text-transform: capitalize;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        .admit:hover{
+            color: tomato;
+            text-decoration: underline;
+            transition: 0.5s ease-in-out;
+            background: blanchedalmond;
+        }
+        .admit2{
+            text-align: center;
+            font-size: 30px;
+            color: chartreuse;
+            text-transform: uppercase;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 600;
+            margin-bottom: 12.9px;
+        }
+        .admit2:hover{
+            color: rgb(71, 108, 255);
+            text-decoration: underline;
+            transition: 0.5s ease-in-out;
+            border-radius: 30px;
+        }
+        button{
+            height: 60px;
+            width: 150px;
+            color: green;
+            font-size: x-large;
+            font-weight: 500;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border-radius: 30px;
+            text-align: center;
+        }
+        button:hover{
+            width: 300px;
+            transition: 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- <p class="admit">Meet with our world's best travel tour agency</p>
+    <p class="admit2">Registration Form</p> -->
+    <form action="travellogin.html">
+        <p class="admit">Meet with our world's best travel tour agency</p>
+    <p class="admit2">Registration Form</p>
+        <label for="fullname">Full Name</label>
+        <input type="text" placeholder="Your Name" id="fullname" pattern="[A-Z][a-z][0-9]{9}"> <br> <br>
+        <label for="email">Email Id</label> 
+        <input type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" id="email" placeholder="Your Email"> <br> <br>
+        <label for="age">Age</label>
+        <input type="number" pattern="[0-30]{2}" placeholder="Your Original Age"id="age"> <br> <br>
+        <label for="adhar">Adhaar Card</label> 
+        <input type="number" pattern="[0-9]{12}" placeholder="Adhaar Card" id="adhar"> <br> <br>
+        <label for="pan">PAN Card</label>
+        <input type="text" pattern="[A-Z][0-9]{6}" placeholder="Your PAN Card" id="pan"> <br> <br>
+        <label for="vote">Voter Card</label>
+        <input type="text" pattern="[A-Z][0-9]{8}" placeholder="Voter ID" id="vote"> <br> <br>
+        <label for="pass">Password</label> 
+        <input type="password" id="pass" placeholder="Password" pattern="[a-z][0-9][A-Z]{8}"><br> <br>
+        <label for="pass">Confirm Password</label> 
+        <input type="password" id="pass" placeholder="Confirm Password" pattern="[a-z][0-9][A-Z]{8}"> <br> <br>
+        <label for="radio">Gender</label> <br>
+        <input type="radio" name="radio" id="radio" value="Male"><span style=" font-size: x-large;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;margin-right: 10px;">Male</span> 
+        <input type="radio"  name="radio"  id="radio" value="Female"><span style=" font-size: x-large;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;margin-right: 10px;">Female</span>
+        <input type="radio"  name="radio"  id="radio" value="LGBTQ"><span style=" font-size: x-large;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;margin-right: 10px;">LGBTQ</span> <br> <br>
+        <button>Submit</button>
+    </form>
+</body>
+</html>

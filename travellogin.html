@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: blueviolet;
+        }
+        .YT{
+            text-transform: uppercase;
+            font-weight: 600;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: xx-large;
+            text-align: center;
+            margin-top: 100px;
+        }
+        .balaji{
+            margin-right: 45px;
+            font-size: xx-large;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 400;
+        }
+        .jolly{
+            display: flex;
+            justify-content: center;
+        }
+        form{
+            background-color: bisque;
+            height: 500px;
+            width: 500px;
+            text-align: center;
+            font-size: xx-large;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: 500;
+        }
+        .DJ{
+            margin-top: 100px;
+        }
+        input{
+            border-radius: 30px;
+            padding: 20px;
+        }
+        button{
+            padding: 16px;
+            width: 200px;
+            background-color: aqua;
+            border-radius: 120px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: x-large;
+        }
+        span{
+            background-image: url("CarImage\ 3.png");
+            background-size: cover;
+            width: 50%;
+            color: #fff;
+            font-size: xx-large;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <p class="YT">das travels agency sign in form</p>
+    <div class="jolly">
+        <span> <br> <br> <br> <br> <br>Plan Your next dream trip. <br> Select your destination <br> and leave the rest to us.</span>
+    <!-- <img src="./CarImage 3.png" alt="" height="500" width="500"> -->
+    <form action="card.html">
+        <p class="DJ">Sign In</p>
+        <label for="email">Email Id</label>
+        <input type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="Your Email"> <br> <br>
+        <label for="pass">Password</label>
+        <input type="password" id="pass" placeholder="password"> <br> <br>
+        <a href="" class="balaji">Forgot Password</a>
+        <button>Sign In</button>
+    </form>
+    </div>
+</body>
+</html>
